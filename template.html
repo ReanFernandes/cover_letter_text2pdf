@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cover Letter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+        
+        /* The @page and body styles are unchanged */
+        @page {
+            size: A4; margin: 2.5cm;
+            @bottom-right { content: "Page " counter(page) " of " counter(pages); font-family: 'Nunito', sans-serif; font-size: 9pt; color: #888; }
+        }
+        body { font-family: 'Nunito', sans-serif; font-size: 11pt; line-height: 1.6; color: #404040; }
+        .header { text-align: right; border-bottom: 1px solid #e0e0e0; padding-bottom: 15px; margin-bottom: 50px; }
+        .header h1 { font-size: 24pt; font-weight: 700; margin: 0; color: #005a9c; }
+        .header h2 { font-size: 11pt; font-weight: 400; margin: 5px 0 0 0; color: #555; }
+        .header p { margin: 4px 0 0 0; font-size: 10pt; }
+
+        /* Styles for the links */
+        .contact-links a { color: #005a9c; text-decoration: none; font-weight: 700; margin-left: 15px; }
+        .contact-links a:hover { text-decoration: underline; }
+        .contact-links a:first-child { margin-left: 0; }
+        
+        /* 2. Style the <i> tag from Font Awesome instead of the old .icon class */
+        .contact-links i {
+            margin-right: 4px;
+            font-size: 11pt; /* Match icon size to text */
+        }
+
+        /* The rest of the styles are unchanged */
+        .recipient-info { text-align: left; margin-bottom: 30px; }
+        .recipient-info p { margin: 0; }
+        .body-content p { text-align: justify; margin-top: 0; margin-bottom: 1em; }
+        .closing, .signature { margin: 0; }
+        .signature { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ my_name }}</h1>
+        {% if job_title %}<h2>{{ job_title }}</h2>{% endif %}
+        <p>{{ email }}</p>
+        <p>{{ phone }}</p>
+        <p>{{ location }}</p>
+        
+        <p class="contact-links">
+            {% for link in contact_links %}
+                <a href="{{ link.url }}" title="{{ link.name }}">
+                    <i class="{{ link.icon_class }}"></i>
+                    {{- link.name -}}
+                </a>
+            {% endfor %}
+        </p>
+    </div>
+
+    <div class="recipient-info">
+        {% if recipient_name %}<p><strong>{{ recipient_name }}</strong></p>{% endif %}
+        <p>{{ company_name }}</p><br><p>{{ date }}</p>
+    </div>
+    <div class="body-content">
+        <p><strong>{{ salutation }}</strong></p>
+        {% for paragraph in body_paragraphs %}<p>{{ paragraph | safe }}</p>{% endfor %}
+    </div>
+    <p class="closing">{{ closing }}</p>
+    <p class="signature">{{ my_name }}</p>
+</body>
+</html>
