@@ -6,8 +6,8 @@ import re # Import the regular expression module
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
-CONTENT_DIR = "content"
-OUTPUT_DIR = "cover_letters"
+CONTENT_DIR = "content" # this directory contains the text body to be converted to a pdf
+OUTPUT_DIR = "cover_letters" #this is where the pdf will be stored
 
 def main():
     parser = argparse.ArgumentParser(description="Generate a PDF cover letter from a template.")
@@ -58,7 +58,7 @@ def main():
 
     company_name_formatted = args.company.replace(" ", "")
 
-    output_filename = f"CoverLetter-ReanFernandes_{company_name_formatted}.pdf"
+    output_filename = f"CoverLetter-{my_info["my_name"].replace(' ', '')}_{company_name_formatted}.pdf"
     output_path = os.path.join(OUTPUT_DIR, output_filename)
 
     env = Environment(loader=FileSystemLoader('.'))

@@ -1,7 +1,2 @@
 jinja2
 weasyprint
-# transformers
-# torch
-# # Flask
-# bitsandbytes
-# accelerate

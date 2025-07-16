@@ -1,0 +1,24 @@
+{
+  "my_name": "Lorem Ipsum",
+  "job_title": "M.Sc. Embedded Systems Engineering, AI specialisation",
+  "email": "rean.fds@gmail.com",
+  "phone": "1234567890",
+  "location": "Germany",
+  "contact_links": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/your-profile",
+      "icon_class": "fa-brands fa-linkedin"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/your-username",
+      "icon_class": "fa-brands fa-github"
+    },
+    {
+      "name": "Blog",
+      "url": "https://your.blog.com",
+      "icon_class": "fa-solid fa-globe"
+    }
+  ]
+}
