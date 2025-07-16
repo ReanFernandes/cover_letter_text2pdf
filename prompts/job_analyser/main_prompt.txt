@@ -1,0 +1,32 @@
+You are an expert job posting analyzer. Analyze the following job posting and extract key information.
+
+IMPORTANT: Return ONLY valid JSON in the exact format specified below. Do not include any other text.
+
+Required JSON format:
+{{
+    "company_name": "string",
+    "job_title": "string",
+    "context": "string",
+    "research_topics": ["topic1", "topic2"],
+    "required_skills": ["skill1", "skill2"],
+    "preferred_skills": ["skill1", "skill2"],
+    "key_responsibilities": ["responsibility1", "responsibility2"],
+    "company_values": ["value1", "value2"],
+    "keywords_to_emphasize": ["keyword1", "keyword2"],
+    "experience_level": "entry/mid/senior/lead",
+    "location": "string or null",
+    "salary_range": "string or null"
+}}
+
+Guidelines:
+- context: 1-2 sentences about what makes this company/role uniquely interesting or different. Focus on their mission, unique technology, or market position - NOT generic job responsibilities.
+- research_topics: ONLY include specific technical research areas, proprietary methodologies, or company-specific initiatives that are central to their work. Do NOT include employee benefits, generic technical terms (like "AI", "machine learning"), or common job requirements.
+- Extract 5-10 most important technical skills for each category
+- Keywords to emphasize should be domain-specific terms that appear multiple times or seem central to the role
+- Company values should be explicitly stated principles or cultural values from the posting
+- Be specific with technical skills (e.g., "PyTorch" not just "deep learning framework")
+- For experience level, choose the best fit from: entry, mid, senior, lead
+- If no specific research topics are mentioned, return an empty array
+
+Job Posting:
+{job_text}

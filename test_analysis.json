@@ -1,0 +1,31 @@
+{
+  "company_name": "Aleph Alpha Research",
+  "job_title": "Senior AI Researcher",
+  "context": "We are building category-defining AI innovation for European AI sovereignty.",
+  "research_topics": [
+    "multi-modal transformer architectures",
+    "explainable deep learning"
+  ],
+  "required_skills": [
+    "PyTorch",
+    "self-supervised learning experience"
+  ],
+  "preferred_skills": [
+    "experience with 10B+ parameter models",
+    "scientific publications"
+  ],
+  "key_responsibilities": [
+    "develop novel approaches for model interpretability",
+    "work end-to-end from research to production deployment"
+  ],
+  "company_values": [],
+  "keywords_to_emphasize": [
+    "AI innovation",
+    "European AI sovereignty",
+    "multi-modal transformer architectures",
+    "explainable deep learning"
+  ],
+  "experience_level": "senior",
+  "location": null,
+  "salary_range": null
+}

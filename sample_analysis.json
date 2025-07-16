@@ -1,0 +1,46 @@
+{
+  "company_name": "CGI",
+  "job_title": "AI Developer",
+  "context": "Being a leading IT and business consulting firm with focus on client needs, industry-specific competence, and innovation.",
+  "research_topics": [
+    "Large Language Models",
+    "Foundation Models",
+    "Data Engineering",
+    "Model Development"
+  ],
+  "required_skills": [
+    "Machine Learning Verfahren",
+    "Model Development",
+    "Natural Language Processing",
+    "Data Analysis",
+    "Python",
+    "Big Data Technologies",
+    "Cloud Computing"
+  ],
+  "preferred_skills": [
+    "Experience with Data Science or AI projects",
+    "Familiarity with different Machine Learning algorithms and frameworks",
+    "Strong analytical skills"
+  ],
+  "key_responsibilities": [
+    "Identifying patterns, connections, and optimization strategies",
+    "Managing and governance of training data",
+    "Developing responsible and ethical AI solutions"
+  ],
+  "company_values": [
+    "Collaboration",
+    "Innovation",
+    "Client focus",
+    "Integrity"
+  ],
+  "keywords_to_emphasize": [
+    "Machine Learning",
+    "Data Science",
+    "AI",
+    "Foundation Models",
+    "Large Language Models"
+  ],
+  "experience_level": "senior",
+  "location": null,
+  "salary_range": null
+}

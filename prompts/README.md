@@ -1,0 +1,1 @@
+All the prompts for all the agents reside here. Choosing this for easier cycling between prompts. 
