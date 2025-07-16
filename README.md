@@ -9,7 +9,7 @@ Applying to jobs in an industry where every job sees hundreds of applicants, mak
 1.  Ensure you have `my_info.json` with your details.
 2.  Run: `python generate_pdf.py --company "Company Name" --body body_file.txt [--manager "Hiring Manager"] [--keywords "keyword1" "keyword2"]`
     *   Replace `"Company Name"` with the company you're applying to.
-    *   Replace `body_file.txt` with your cover letter content file in the `content` directory. I normally use `body_<company_name>.txt` for easier management. 
+    *   Replace `body_file.txt` with your cover letter content file in the `content` directory. I normally use `body_<company_name>.txt` for easier management. **Note: Only include the body of the cover letter, opening and closing details are handled in the generation from the template and your info**
     *   Optionally, include `--manager` followed by the hiring manager's name.
     *   Optionally, use `--keywords` followed by a space-separated list of keywords to highlight.
 
